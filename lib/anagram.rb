@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(anarray)
-    anarray.collect {|pot_ana| self.is_anagram?(word,pot_ana)}
+    anarray.select {|pot_ana| self.is_anagram?(word,pot_ana)}
   end
 
   def is_anagram?(word,pot_ana)
