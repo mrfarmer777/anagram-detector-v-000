@@ -13,12 +13,9 @@ class Anagram
   private
 
   def is_anagram(word,pot_ana)
-    word_array=word.split.sort
-    ana_array=pot_ana.split.sort
+    word_array=word.split(//).sort
+    ana_array=pot_ana.split(//).sort
     word_array==ana_array
   end
 
 end
-
-
-    
